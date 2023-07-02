@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  output: "export",
+  images: {
+    loader: 'custom',
+    loaderFile: './src/components/ui/CldImageLoader.tsx',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

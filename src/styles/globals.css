@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --swiper-theme-color:  #C04BF2;
+  --swiper-pagination-color: #C04BF2;
+  --swiper-pagination-bullet-inactive-color: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +17,11 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+  
+}
+
+.section {
+   @apply w-full h-[calc(100vh-8rem)]
 }
 
 body {

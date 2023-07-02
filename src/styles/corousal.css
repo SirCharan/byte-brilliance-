@@ -1,0 +1,16 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+.corousal-title {
+    font-family: 'Jeju Gothic', sans-serif;
+}
+
+.swiper-pagination{
+    /* position: static !important; */
+  
+     /* @apply md:pt-5; */
+
+}
+
+.mySwiper {
+    @apply w-full flex flex-col md:h-4/5 h-[calc(100%-8rem)] 
+}
