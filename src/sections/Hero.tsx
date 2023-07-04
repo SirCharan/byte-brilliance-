@@ -7,7 +7,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className={" h-screen container  box-border w-full py-7 "}>
+    <section className={" h-screen flex items-center  container  box-border w-full  pt-16 "}>
       <Corousal corousalItems={contentConfig.corousals} />
     </section>
   );

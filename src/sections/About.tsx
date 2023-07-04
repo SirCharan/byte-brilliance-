@@ -4,8 +4,8 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section id="whoWeAre" className="section container">
-      <div className="flex md:flex-row flex-col  items-start lg:gap-40 gap-20 justify-between">
+    <section id="whoWeAre" className=" flex items-center h-screen container">
+      <div className="flex md:flex-row flex-col  items-start lg:gap-40 gap-24 justify-between">
         <div className="flex justify-center w-full">
           <div className="bg-primary flex md:justify-end max-lg:items-start  w-36 h-20  md:w-96 md:h-72">
             <h2 className="md:text-9xl text-5xl md:w-3/4 lg:pt-10  lg:text-start font-jeju">

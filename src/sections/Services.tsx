@@ -6,8 +6,9 @@ type Props = {};
 
 const Services = (props: Props) => {
   return (
-    <section id="services" className="min-h-screen">
-      <h2 className="font-mightyShadow text-center lg:text-7xl text-4xl lg:pb-28 pb-7">Services</h2>
+    <section id="services" className="flex flex-col gap-10 py-10  container">
+
+      <h2 className="font-mightyShadow text-center lg:text-7xl  text-4xl ">Services</h2>
       <div className="lg:relative h-full w-full">
         <Image
           src={"/v1688293745/wallpaper/mushrooms.png"}
@@ -18,8 +19,8 @@ const Services = (props: Props) => {
           width={1440}
         />
 
-        <div className="lg:absolute lg:inset-0  container">
-          <div className="grid grid-flow-col w-full gap-9 justify-items-center place-items-center h-full lg:grid-rows-2 grid-rows-1 overflow-x-auto ">
+        <div className="lg:absolute lg:inset-0    container">
+          <div className="lg:grid lg:grid-flow-col w-full overflow-x-auto lg:gap-9 gap-5 gap-y-0 lg:justify-items-center lg:place-items-center h-full lg:grid-rows-2 flex flex-nowrap ">
              {
                contentConfig.services.map((service, index) => (
                 <ServiceCard service={service} key={index}/>

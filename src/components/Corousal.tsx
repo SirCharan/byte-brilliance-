@@ -33,9 +33,9 @@ const Corousal = ({ corousalItems }: Props) => {
     >
       {corousalItems.map((item, index) => {
         return (
-          <SwiperSlide className="w-full relative h-full" key={index}>
+          <SwiperSlide className="w-full  relative h-full" key={index}>
             {/* <div className="   "> */}
-              <Image  className="lg:px-28 max-md:h-[80%] max-md:w-[95%] object-cover absolute top-0 left-0 " src={item.imgUrl} height={700} width={1400} alt="img" />
+              <Image  className="lg:px-28  max-md:h-[80%] max-md:w-[95%] object-cover absolute top-0 left-0 " src={item.imgUrl} height={700} width={1400} alt="img" />
               <h2 className="corousal-title  text-5xl md:text-8xl md:w-[43rem] w-[80%] text-right    bottom-16 md:bottom-0 right-5   md:right-0  absolute">
                 {item.title}
               </h2>

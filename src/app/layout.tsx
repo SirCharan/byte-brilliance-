@@ -1,12 +1,13 @@
 import { siteConfig } from "@/config/site";
 import "../styles/globals.css";
-import { Hubballi } from "next/font/google";
+import { Hubballi, Judson } from "next/font/google";
 import { Footer, Navbar } from "@/components";
 import {twJoin} from 'tailwind-merge';
 import { TailwindIndicator } from "@/components/ui/TailwindIndicator";
 import localFont from 'next/font/local'
  
-const hubballi = Hubballi({ weight: "400", subsets: ["latin"] });
+const hubballi = Hubballi({ weight: "400", subsets: ["latin"], variable: '--font-hubballi' });
+const judsonFont = Judson({ weight: "400", subsets: ["latin"], variable: '--font-judson' });
 const mightySahdowFont = localFont({
   src: './MightyShadow.ttf',
   display: 'swap',
@@ -25,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={twJoin(hubballi.className, "bg-black", mightySahdowFont.variable)}>
+      <body className={twJoin(hubballi.variable, "bg-black font-hubbali", mightySahdowFont.variable, judsonFont.variable)}>
         <Navbar />
         {children}
         <Footer />
