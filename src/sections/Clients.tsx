@@ -10,7 +10,7 @@ const Clients = (props: Props) => {
            {
             contentConfig.clients.map((client, index) => (
               <div key={index} className="md:w-20 w-16 h-10 flex max-md:flex-shrink-0 items-center md:h-16">
-                <Image src={client.imgUrl} alt={client.title} height={60} className="h-full w-full md:object-cover object-contain " width={130} />
+                <Image src={client.imgUrl} alt={client.title} height={60} className="h-full w-full  object-contain " width={130} />
               </div>
             ))
            }

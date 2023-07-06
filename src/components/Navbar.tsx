@@ -24,7 +24,7 @@ const Navbar = (props: Props) => {
             </Link>
           ))}
         </nav>
-        <button className="lg:px-6 lg:py-2  text-xl font-bold  hover:bg-black hover:border-2 box-border md:hover:border-primary   md:bg-primary md:rounded-3xl shadow-md">
+        <button className="lg:px-6 lg:py-2  text-xl font-bold transition-colors duration-300 border-transparent  hover:bg-black hover:border-2 box-border md:hover:border-primary   md:bg-primary md:rounded-3xl shadow-md">
           <Link href="#contact">
             <span className="md:block hidden ">Contact Us</span>
             <span className="md:hidden block">

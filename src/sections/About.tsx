@@ -36,7 +36,7 @@ const About = (props: Props) => {
           <p>
             Unlock your business&apos;s digital excellence with ByteBrilliance today.
           </p>
-          <button className="px-6 py-2 text-xl font-bold   bg-primary rounded-3xl shadow-md">
+          <button className="px-6 py-2 text-xl font-bold transition-colors duration-300 hover:bg-transparent border border-transparent  hover:border-primary     bg-primary rounded-3xl shadow-md">
             <Link href="#contact">Contact Us</Link>
           </button>
         </div>
