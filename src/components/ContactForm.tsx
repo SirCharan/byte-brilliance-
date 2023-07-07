@@ -6,7 +6,7 @@ type Props = {};
 
 const ContactForm = (props: Props) => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-   
+    e.preventDefault();
     // const formData = new FormData(e.currentTarget);
     // const data = Object.fromEntries(formData);
     // console.log(data);
@@ -26,9 +26,11 @@ const ContactForm = (props: Props) => {
       onSubmit={handleSubmit}
       className="flex  flex-1  flex-col gap-5"
       action=""
+      
       name="google-sheet"
     >
       <input
+      required
         type="text"
         className="p-2 bg-transparent border text-white  rounded-md"
         name="First_Name"
@@ -36,6 +38,7 @@ const ContactForm = (props: Props) => {
         placeholder="First Name"
       />
       <input
+      required
         type="text"
         className="p-2 bg-transparent border text-white  rounded-md"
         name="Last_Name"
@@ -43,6 +46,7 @@ const ContactForm = (props: Props) => {
         placeholder="Last Name"
       />
       <input
+      required
         type="email"
         className="p-2 bg-transparent border text-white  rounded-md"
         name="Work_Email"
@@ -50,6 +54,7 @@ const ContactForm = (props: Props) => {
         placeholder="Work Email"
       />
       <input
+      required
         type="text"
         className="p-2 bg-transparent border text-white  rounded-md"
         name="Job_Title"
@@ -57,6 +62,7 @@ const ContactForm = (props: Props) => {
         placeholder="Job Title"
       />
       <input
+      required
         type="text"
         className="p-2 bg-transparent border text-white  rounded-md"
         name="Country"
