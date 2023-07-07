@@ -7,14 +7,15 @@ type Props = {};
 const ContactForm = (props: Props) => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // const formData = new FormData(e.currentTarget);
+    const formData = new FormData(e.currentTarget);
+    e.currentTarget.reset();
     // const data = Object.fromEntries(formData);
     // console.log(data);
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbxfmfuWp7RtJA3Eiw6cYEq17vPZhQMuIwCkDIywA5iQ6WoOQUkOwwQyc7croQUhQyE3/exec";
     // const form = document.forms["google-sheet"];
 
-    fetch(scriptURL, { method: "POST", body: new FormData(e.currentTarget) })
+    fetch(scriptURL, { method: "POST", body: formData })
       .then((response) =>
         alert("Thanks for Contacting us..! We Will Contact You Soon...")
       )
