@@ -19,7 +19,7 @@ const Services = (props: Props) => {
           width={1440}
         />
 
-        <div className="lg:absolute lg:inset-0    container">
+        <div className="lg:absolute lg:inset-0    md:container">
           <div className="lg:grid lg:grid-flow-col w-full overflow-x-auto lg:gap-9 gap-5 gap-y-0 lg:justify-items-center lg:place-items-center h-full lg:grid-rows-2 flex flex-nowrap ">
              {
                contentConfig.services.map((service, index) => (

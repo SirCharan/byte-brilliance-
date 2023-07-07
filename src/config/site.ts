@@ -1,4 +1,4 @@
-import { clients, corousals, navLinks, portfolios, services, socialLinks } from "@/lib/constants";
+import { clients, corousals, footer, navLinks, portfolios, services, socialLinks } from "@/lib/constants";
 
 export const siteConfig = {
   logo: "/brand/logo_w_text.png",
@@ -17,4 +17,5 @@ export const contentConfig = {
   services: services,
   portfolios: portfolios,
   clients: clients,
+  footer: footer,
 }

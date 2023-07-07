@@ -12,8 +12,8 @@ const Navbar = (props: Props) => {
           <Image
           className="object-cover h-full w-full"
             src={siteConfig.logoWithText}
-            height={72}
-            width={193}
+            height={200}
+            width={200}
             alt="logo"
           />
         </div>
